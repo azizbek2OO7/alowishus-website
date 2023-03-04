@@ -1,0 +1,16 @@
+// coffe
+
+.coffe{
+    @include flex;
+    padding: 0 80px;
+    h1{
+        @include heading($width: 522px);
+    }
+    p{
+        margin: 20px 0 60px 0;
+        @include paragraph($width: 592px);
+    }
+    button{
+        @include button($padding: 18px 39px, $size: 1.2rem);
+    }
+}

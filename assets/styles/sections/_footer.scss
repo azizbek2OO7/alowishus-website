@@ -1,0 +1,98 @@
+// footer
+
+footer{
+    padding: 0 80px 30px 80px;
+    .footer-top{
+        @include flex;
+        padding-bottom: 70px;
+    }
+    .footer-left{
+        h2{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        p{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            width: 538px;
+            margin: 25px 0;
+        }
+        a{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            transition: .3s linear;
+            span{
+                margin-left: 5px;
+                i{
+                    transition: .3s linear;
+                }
+            }
+            &:hover{
+                span{
+                    i{
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+    .footer-right{
+        h2{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+        input{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            background: #FFFFFF;
+            box-shadow: 0px 12px 30px rgba(205, 209, 214, 0.28);
+            border-radius: 65px;
+            border: none;
+            outline: none;
+            padding: 19px 29px;
+            width: 415px;
+            margin: 25px 0;
+        }
+        button{
+            @include button($padding: 19px 39px, $width: 173px);
+        }
+    }
+    .footer-bottom{
+        img{
+            width: 100%;
+        }
+        .footer-content{
+            padding-top: 30px;
+            @include flex;
+            h3{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.3rem;
+                color: var(--secondary-color);
+            }
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+        }
+    }
+}

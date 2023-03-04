@@ -1,0 +1,106 @@
+// header
+
+.header{
+    background: #EEEFF1;
+    padding: 10px 80px 50px 80px;
+}
+
+.navbar{
+    @include flex;
+    position: fixed;
+    z-index: 4;
+    padding: 10px 80px;
+    width: 100%;
+    top: 0;
+    background-color: #EEEFF1;
+    margin: 0 -80px;
+    box-shadow: 3px 3px 5px 5px #dfdfdf;
+    &-right{
+        @include flex($justify: flex-start, $gap: 40px);
+        .navbar-menu{
+            @include flex($justify: flex-start, $gap: 40px);
+            a{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.1rem;
+                color: var(--primary-color);
+                text-decoration: none;
+                transition: .3s linear;
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+        }
+        .navbar-btn{
+            @include flex($justify: flex-start, $gap: 20px);
+            i{
+                background: #FFFFFF;
+                color: var(--primary-color);
+                box-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
+                font-size: 1.1rem;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                @include flex($justify: center);
+                cursor: pointer;
+                transition: .3s linear;
+                &:hover{
+                    background: var(--primary-color);
+                    color: #FFFFFF;
+                }
+            }
+            button{
+                @include button;
+            }
+        }
+    }
+}
+
+.hero{
+    @include flex;
+    margin-top: 100px;
+    &-content{
+        margin-top: -60px;
+        h1{
+            width: 550px;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 7.4rem;
+            color: var(--primary-color);
+            line-height: 1.1;
+            span{
+                margin-left: 30px;
+            }
+        }
+        p{
+            margin: 30px 0 60px 0;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.9rem;
+            color: var(--secondary-color);
+            width: 560px;
+        }
+        .hero-content-btn{
+            @include flex($justify: flex-start, $gap: 30px);
+            button{
+                @include button($padding: 18px 39px, $size: 1.3rem);
+            }
+            a{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                color: var(--primary-color);
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 1.6px solid var(--secondary-color);
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,51 @@
+// explore
+
+.explore{
+    padding: 150px 80px 150px 80px;
+    background-image: url("../images/explore-bg-img.png");
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    .explore-top{
+        text-align: center;
+        h1{
+            @include heading;
+        }
+        p{
+            @include paragraph;
+            margin: 14px auto 0 auto;
+        }
+    }
+    .explore-container{
+        @include flex($justify: center, $gap: 50px);
+    }
+    .explore-box{
+        text-align: center;
+        background: linear-gradient(152.09deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
+        border-radius: 24px;
+        width: 393px;
+        padding: 40px 37px;
+        h2{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2.1rem;
+            color: var(--primary-color);
+            margin-bottom: 4px;
+            text-align: left;
+        }
+        p{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.6rem;
+            color: var(--secondary-color);
+            margin-bottom: 50px;
+            text-align: left;
+        }
+        button{
+            margin-top: 50px;
+            @include button($width: 225px);
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@mixin flex($align: center, $justify: space-between, $gap: 0) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+@mixin button($padding: 14px 29px, $radius: 63px, $size: 1rem, $width: unset) {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: $size;
+    text-transform: uppercase;
+    width: $width;
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    padding: $padding;
+    box-shadow: 0px 30px 60px rgba(163, 168, 179, 0.15);
+    border-radius: $radius;
+    transition: .3s linear;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    &:hover{
+        background-color: transparent;
+        color: var(--primary-color);
+    }
+}
+
+@mixin heading($width: unset) {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.7rem;
+    color: var(--primary-color);
+    width: $width;
+}
+
+@mixin paragraph($width: 690px) {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9rem;
+    color: var(--secondary-color);
+    width: $width;
+}

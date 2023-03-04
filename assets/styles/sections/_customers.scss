@@ -1,0 +1,88 @@
+// customers
+
+.customers{
+    background-image: url(../images/customers-bg-img-2.png);
+    background-repeat: no-repeat;
+    background-position: right 180px;
+    padding: 50px 80px 150px 0;
+    @include flex($align: flex-start, $gap: 50px);
+    .customers-container{
+        @include flex($justify: flex-start, $gap: 30px);
+    }
+    .customers-box{
+        background: linear-gradient(142.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 0px 20px 60px rgba(163, 168, 179, 0.15);
+        border-radius: 16px;
+        width: 468px;
+        &.customers-box-1{
+            margin-left: -130px;
+            > img{
+                border-radius: 16px 16px 0px 0px;
+                transform: rotateY(180deg);
+            }
+        }
+        .customers-box-content{
+            padding: 30px;
+            .customers-box-top{
+                margin-bottom: 20px;
+                @include flex($justify: flex-start, $gap: 18px);
+                h3{
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    color: var(--primary-color);
+                }
+                i{
+                    color: #FFB700;
+                    cursor: pointer;
+                    transition: .3s linear;
+                    &:hover{
+                        color: var(--primary-color);
+                    }
+                }
+            }
+            p{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.2rem;
+                color: var(--primary-color);
+                width: 357px;
+            }
+        }
+    }
+    .customers-content{
+        h1{
+            @include heading;
+            line-height: 1.1;
+        }
+        &-top{
+            margin: 40px 0 80px 0;
+            @include flex($justify: flex-start, $gap: 20px);
+            h2{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2.5rem;
+                color: var(--primary-color);
+            }
+            i{
+                color: #FFB700;
+                transition: .3s linear;
+                cursor: pointer;
+                &:hover{
+                    color: var(--primary-color);
+                }
+            }
+            p{
+                margin-top: 3px;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.2rem;
+                color: var(--secondary-color);
+            }
+        }
+    }
+}

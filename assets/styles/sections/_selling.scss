@@ -1,0 +1,73 @@
+// selling
+
+.selling{
+    margin-top: -150px;
+    padding: 0 80px 100px 80px;
+    .selling-top{
+        text-align: center;
+        h1{
+            @include heading;
+            margin-bottom: 10px;
+        }
+        p{
+            margin: 0 auto;
+            @include paragraph;
+        }
+    }
+    .selling-container{
+        margin-top: 170px;
+        @include flex($justify: center, $gap: 50px);
+    }
+    .selling-box{
+        background: linear-gradient(142.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 0 15px 50px 20px rgba(163, 168, 179, 0.15);
+        border-radius: 24px;
+        width: 393px;
+        padding: 40px 35px 35px 35px;
+        &-top{
+            img{
+                margin-top: -50px;
+            }
+            margin-top: -70px;
+            @include flex;
+            p{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.3rem;
+                color: var(--secondary-color);
+                margin-bottom: 10px;
+            }
+            h3{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 2.5rem;
+                line-height: 1.1;
+                color: var(--primary-color);
+            }
+        }
+        > p{
+            margin: 15px 0 40px 0;
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: var(--secondary-color);
+        }
+        &-price{
+            @include flex;
+            h3{
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.8rem;
+                color: var(--primary-color);
+            }
+            button{
+                @include button($size: 1.1rem, $width: 171px);
+            }
+        }
+    }
+}
